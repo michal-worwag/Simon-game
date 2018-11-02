@@ -233,3 +233,16 @@ function winGame() {
   on =false;
   win = true;
 }
+
+// How to play div
+
+const howToPlayBtn = document.getElementById("howToPlayBtn");
+
+howToPlayBtn.addEventListener('click', (event) => {
+  let rules = document.getElementById("rules");
+  if (rules.style.display === "block") {
+    rules.style.display = "none";
+  } else {
+    rules.style.display = "block";
+  }
+})
